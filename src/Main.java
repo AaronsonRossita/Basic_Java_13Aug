@@ -132,13 +132,41 @@ public class Main {
 //        System.out.println("}");
 //
 //
-//        int size = 5;
+        int size = 5;
 //        for (int i = 0; i < size; i++) {
 //            for (int j = 0; j < size; j++) {
 //                System.out.print("* ");
 //            }
 //            System.out.println();
 //        }
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if(i == 0 || j == 0 || i == size-1 || j == size-1){
+                    System.out.print("* ");
+                }else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < i+1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        for (int i = 1; i <= size; i++) {
+            for (int j = 0; j < size-i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
 //
 //        int numberToGuess = (int)(Math.random() * 10) + 1;
 //        System.out.println(numberToGuess);
